@@ -12,6 +12,8 @@ header {
     background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header h1 {
@@ -53,27 +55,46 @@ header h1 {
 }
 
 footer {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-footer p {
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section p {
     margin: 0;
+    font-size: 1.2em;
 }
 
 .footer-links {
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
-.footer-links a {
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.footer-links a:hover {
+.footer-column a:hover {
     text-decoration: underline;
 }
 
