@@ -1,17 +1,20 @@
+/* Estilos generales para el cuerpo de la página */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centra el contenido en la página */
 }
 
+/* Estilos generales para el encabezado y pie de página */
 header, footer {
     width: 100%;
     box-sizing: border-box;
 }
 
+/* Estilos específicos del encabezado */
 header {
     background-color: #f8f9fa;
     padding: 20px;
@@ -21,10 +24,11 @@ header {
 header h1 {
     margin: 0;
     font-size: 3em;
-    color: #008B8B;
+    color: #008B8B; /* Color del título principal */
     font-weight: bold;
 }
 
+/* Estilos para las secciones de texto */
 .texto {
     display: flex;
     align-items: center;
@@ -56,6 +60,7 @@ header h1 {
     color: #666;
 }
 
+/* Estilos del pie de página */
 footer {
     background-color: #000;
     color: #fff;
@@ -98,7 +103,7 @@ footer {
     text-decoration: underline;
 }
 
-/* Estilos para las imágenes a la derecha */
+/* Estilos para las imágenes alineadas a la derecha */
 .right-image {
     order: 1;
 }
@@ -107,19 +112,19 @@ footer {
     order: 0;
 }
 
-/* Responsive Design for Mobile */
+/* Diseño responsive para dispositivos móviles */
 @media (max-width: 767px) {
     .texto {
-        flex-direction: column;
+        flex-direction: column; /* Cambia la disposición a vertical */
     }
 
     .texto img {
-        width: 100%;
+        width: 100%; /* Ajusta la imagen al ancho completo */
     }
 
     .texto-info {
         width: 100%;
         padding: 20px;
-        text-align: center;
+        text-align: center; /* Centra el texto */
     }
 }
